@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+</head>
+
+<body>
+  <h1>Liste des audits</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Customer</th>
+        <th scope="col">Date</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Status</th>
+        <th scope="col">Comments</th>
+    </thead>
+    <tbody>
+
+      <? for  (let audit of audits) 
+       { ?>
+      </th>
+      <td scope="row">
+        <?= audit.id ?>
+        </th>
+      <td>
+        <?= audit.client ?>
+      </td>
+      <td>
+        <?= audit.date ?>
+        </th>
+      <td>
+        <?= audit.reason ?>
+      </td>
+      <td>
+        <?= audit.status ?>
+      </td>
+      <td>
+        <?= audit.comments ?>
+      </td>
+      </tr>
+      <? } ?>
+    </tbody>
+  </table>
+</body>
+</html>
