@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base target="_top">
-  </head>
-  <body>
-    <h1>hello on est sur la page auditCreate</h1>
-  </body>
+
+<head>
+  <base target="_top">
+</head>
+
+<body>
+  <h1>hello on est sur la page auditCreate</h1>
+  <form>
+    <div class="form-group">
+      <label for="InputId">id</label>
+      <input type="text" class="form-control" id="InputId" aria-describedby="" placeholder="Enter id">
+    </div>
+    <div class="form-group">
+      <label for="InputClient">client</label>
+      <input type="text" class="form-control" id="InputClient" aria-describedby="" placeholder="Enter client">
+    </div>
+    <div class="form-group">
+      <label for="InputDate">date</label>
+      <input type="date" id="start" name="trip-start" value="2025-04-01" min="2025-04-01" max="2025-12-31"
+        class="form-control" id="InputDate" aria-describedby="" placeholder="Enter date">
+    </div>
+    <fieldset class="form-group">
+      <legend>Confirm Status</legend>
+      <div>
+        <input type="radio" id="ok" name="status" value="ok" checked />
+        <label for="ok">Ok</label>
+      </div>
+      <div>
+        <input type="radio" id="notOk" name="status" value="notOk" />
+        <label for="notOk">Not Ok</label>
+      </div>
+    </fieldset>
+    <div class="form-group">
+      <label for="InputStatus">Defect Reason</label>
+      <div>
+        <select class="custom-select">
+          <option selected value="1">Damaged</option>
+          <option value="2">Wrong product</option>
+          <option value="3">Missing Item</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="InputComment">Comment</label>
+      <input type="text" class="form-control" id="InputComment" aria-describedby="" placeholder="Enter comment">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+
 </html>
